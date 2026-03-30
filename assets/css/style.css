@@ -29,29 +29,29 @@ p {
   z-index: 1;
 }
 
-/* --- Botón WhatsApp --- */
-.whatsapp-btn {
+.whatsapp-float {
   position: fixed;
-  bottom: 25px;
-  right: 25px;
-  background-color: #25d366;
-  color: white;
   width: 60px;
   height: 60px;
-  border-radius: 50%;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+  z-index: 9999; /* Para que siempre esté por encima de todo */
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-  z-index: 9999;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease;
   text-decoration: none;
 }
 
-.whatsapp-btn:hover {
-  transform: scale(1.1) translateY(-5px);
-  background-color: #1ebe5d;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+.whatsapp-float:hover {
+  background-color: #128c7e;
+  transform: scale(1.1);
   color: white;
 }
 
